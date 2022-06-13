@@ -527,3 +527,16 @@ footer {
   }
 }
 
+
+/* erreur message */
+
+input ~ span:after {
+  content: attr(data-error);
+  font-size: 0.4em;
+  color: red;
+  opacity: 0;
+} 
+
+input:invalid ~ span:after {
+	opacity: 1;
+}

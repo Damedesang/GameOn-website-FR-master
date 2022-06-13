@@ -20,4 +20,10 @@ function launchModal() {
   modalbg.style.display = "block";
 }
 
-
+function validationFormulaire(){
+  validationRadioBox();
+  
+}
+function validationRadioBox(){
+  
+}
