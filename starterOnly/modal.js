@@ -25,7 +25,7 @@ function launchModal() {
 function validationFormulaire(){
   if (validationRadioBox()){
     alert('Merci');
-    document.getElementById("formulaire").submit;
+    document.getElementById("formulaire").submit();
     //validé l'envoi et affiché message d'envoir reussi.
   }
   else {
