@@ -61,6 +61,7 @@
               action="index.html"
               method="get"
               onsubmit="return validate();"
+              id="formulaire";
             >
               <div class="formData">
                 <label for="first">Prénom</label><br>
@@ -117,16 +118,17 @@
                 <label class="checkbox-label" for="location6">
                   <span class="checkbox-icon"></span>
                   Portland</label>
-                  <span data-error="Vous devez choisir une option."></span>
+                  <span data-error=""></span>
               </div>
 
               <div
                 class="formData">
-                <input class="checkbox-input" type="checkbox" id="checkbox1" checked/>
-                <label class="checkbox2-label" for="checkbox1" required>
+                <input class="checkbox-input" type="checkbox" id="checkbox1" required/>
+                <label class="checkbox2-label" for="checkbox1" >
                   <span class="checkbox-icon"></span>
                   J'ai lu et accepté les conditions d'utilisation.
                 </label>
+                <br>
                 <span data-error="Vous devez vérifier que vous acceptez les termes et conditions"></span>
                 <br>
                 <input class="checkbox-input" type="checkbox" id="checkbox2"/>
@@ -136,7 +138,7 @@
                 </label>
                 <br>
               </div>
-              <input class="btn-submit" type="submit" class="button" value="C'est parti" onclick="validationFormulaire()"/>
+              <input id="boutonEnvoi" class="btn-submit" type="submit" class="button" value="C'est parti" onclick="validationFormulaire(); return false;"/>
             </form>
           </div>
         </div>
