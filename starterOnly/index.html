@@ -55,7 +55,7 @@
       <div class="bground">
         <div class="content">
           <span class="close"></span>
-          <div class="modal-body">
+          <div class="modal-body" id="modal-body">
             <form
               name="reserve"
               action="index.html"
@@ -138,10 +138,10 @@
                 </label>
                 <br>
               </div>
-              <input id="boutonEnvoi" class="btn-submit" type="submit" class="button" value="C'est parti" onclick="validationFormulaire(); return false;"/>
+              <input id="boutonEnvoi" class="btn-submit" type="submit" class="button" value="C'est parti" onclick="validationFormulaire(); changeModal(); return false;"/>
             </form>
           </div>
-          <div class="modal-validation">
+          <div class="modal-validation" id="modal-validation">
             <p>Merci pour votre inscription</p>
           </div>
         </div>

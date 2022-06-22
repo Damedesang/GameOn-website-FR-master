@@ -24,7 +24,7 @@ function launchModal() {
 // Vérification et validation du formulaire
 function validationFormulaire(){
   if (validationRadioBox()){
-    alert('Merci');
+    //alert('Merci');
     document.getElementById("formulaire").submit();
     //validé l'envoi et affiché message d'envoi reussi.
   }
@@ -34,6 +34,7 @@ function validationFormulaire(){
   }
   
 }
+// Fonction qui check si au moins un des bouton est cochée
 function validationRadioBox(){
   if (document.getElementById("location1").checked == true){
     return true;
@@ -56,4 +57,13 @@ function validationRadioBox(){
   else{
     return false;
   }
+}
+
+//changement de modal apres envoi du formulaire
+function changeModal(){
+  alert('changeModal');
+  launchModal();
+  document.getElementById("modal-body").style.display = "none";
+  document.getElementById("modal-validation").style.display = "block";
+  alert('changeModalend');
 }
