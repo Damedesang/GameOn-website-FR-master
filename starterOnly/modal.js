@@ -21,16 +21,15 @@ function launchModal() {
 }
 
 
-// Validation ou non du formulaire
+// Vérification et validation du formulaire
 function validationFormulaire(){
   if (validationRadioBox()){
     alert('Merci');
     document.getElementById("formulaire").submit();
-    //validé l'envoi et affiché message d'envoir reussi.
+    //validé l'envoi et affiché message d'envoi reussi.
   }
   else {
     alert('Vous devez choisir une option.');
-    //document.getElementById("boutonEnvoi").onsubmit="return false;";
     //Ne pas validé l'envoi
   }
   
